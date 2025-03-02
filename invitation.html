@@ -14,6 +14,8 @@
     .invitation-video {
       width: 100%;
       max-width: 800px;
+      max-height: 80vh;
+      object-fit: contain;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       margin: 20px auto;
@@ -51,6 +53,27 @@
       transition: background 0.3s ease;
       margin-top: 20px;
     }
+    @media (max-width: 480px) {
+      main {
+        padding: 10px;
+      }
+      .invitation-video {
+        max-width: 100%;
+        max-height: 50vh; 
+      }
+      .invitation-details {
+        font-size: 1em;
+        margin: 10px;
+      }
+      .intro {
+        font-size: 14px;
+        max-width: 90%;
+      }
+      #backBtn_l {
+        padding: 8px 16px;
+        font-size: 14px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -64,7 +87,7 @@
       <video class="invitation-video" src="video/venue.mp4" autoplay loop muted playsinline></video>
       <div class="invitation-details">
         <p>Дорогие девушки, мы рады пригласить вас на незабываемый вечер в Антикафе.</p>
-        <p>В этот раз все будет по другому, каждый придет не просто покушать, а весело провести время в комфортной обстановке, с миллионами игр.</p>
+        <p>В этот раз все будет по другому, каждый придет не просто покушать, а весело провести время в комфортной обствановке, с миллионами игр.</p>
         <p class="dress-code">Дресс-код: Свободная, удобная для игр одежда</p>
         <p>Среда(05.03.25) после уроков</p>
         <button id="backBtn_l">Вернуться на главную</button>
